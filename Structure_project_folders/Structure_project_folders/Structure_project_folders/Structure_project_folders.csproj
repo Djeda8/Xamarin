@@ -17,6 +17,5 @@
 
   <ItemGroup>
     <Folder Include="Behaviors\" />
-    <Folder Include="CustomControls\" />
   </ItemGroup>
 </Project>
