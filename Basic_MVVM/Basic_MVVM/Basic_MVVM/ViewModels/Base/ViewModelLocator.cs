@@ -1,5 +1,6 @@
 ﻿using Autofac;
 using Basic_MVVM.Services.Navigation;
+using Basic_MVVM.ViewModels.Main;
 using System;
 
 namespace Basic_MVVM.ViewModels.Base

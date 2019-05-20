@@ -1,8 +1,9 @@
 ﻿using Basic_MVVM.ViewModels.Base;
+using Basic_MVVM.ViewModels.Main;
 using Basic_MVVM.Views.Base;
+using Basic_MVVM.Views.Main;
 using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
