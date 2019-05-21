@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.452
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigation_Service_Menu.Android", "Navigation_Service_Menu\Navigation_Service_Menu.Android\Navigation_Service_Menu.Android.csproj", "{AEDEEA10-D4A7-41DB-877B-8AD1FA6A62C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Navigation_Service_Menu", "Navigation_Service_Menu\Navigation_Service_Menu\Navigation_Service_Menu.csproj", "{DA9E73AA-BF04-48D0-AFB9-C2E9745115FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AEDEEA10-D4A7-41DB-877B-8AD1FA6A62C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEDEEA10-D4A7-41DB-877B-8AD1FA6A62C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEDEEA10-D4A7-41DB-877B-8AD1FA6A62C4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AEDEEA10-D4A7-41DB-877B-8AD1FA6A62C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEDEEA10-D4A7-41DB-877B-8AD1FA6A62C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEDEEA10-D4A7-41DB-877B-8AD1FA6A62C4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DA9E73AA-BF04-48D0-AFB9-C2E9745115FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9E73AA-BF04-48D0-AFB9-C2E9745115FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9E73AA-BF04-48D0-AFB9-C2E9745115FB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DA9E73AA-BF04-48D0-AFB9-C2E9745115FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9E73AA-BF04-48D0-AFB9-C2E9745115FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9E73AA-BF04-48D0-AFB9-C2E9745115FB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DD4006FC-E0A4-4F58-A620-2533A3C542AE}
+	EndGlobalSection
+EndGlobal
