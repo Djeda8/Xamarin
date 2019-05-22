@@ -22,7 +22,13 @@
 
 11. In the *ViewModels/Base* subfolder add the __DelegateCommand.cs, ViewModelBase.cs and ViewModelLocator.cs__ class.
 
-12. In the *ViewModels/Main* subfolder add the __MainViewModel.cs__ class.
+12. In the *ViewModelLocator* class you must resgister the __NavigationService__.
+
+13. In the *ViewModels/Main* subfolder add the __MainViewModel.cs__ class.
+
+14. In the *ViewModelLocator* class you must resgister the __MainViewModel__.
+
+15. In the *NavigationService* you must do the mapping of the __MainViewModel__ and the __MainView__. 
 
 > Note: The Basic_MVVM project needs the Autofac package.
 
