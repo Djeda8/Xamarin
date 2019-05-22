@@ -30,9 +30,9 @@
 
 15. In the *NavigationService* you must do the mapping of the __MainViewModel__ and the __MainView__.
 
-6. In the *ViewModelBase* class you must declare the __NavigationService__.
+16. In the *ViewModelBase* class you must declare the __NavigationService__.
 
-7. In the *constructor* of the *ViewModelBase* you must create a instance of the __NavigationService__.
+17. In the *constructor* of the *ViewModelBase* you must create a instance of the __NavigationService__.
 
 > Note: The Basic_MVVM project needs the Autofac package.
 
