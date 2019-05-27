@@ -8,13 +8,20 @@ namespace DialogService.ViewModels.Main
 {
     class MainViewModel : ViewModelBase
     {
+        private readonly IDialogService _dialogService;
+
+        public MainViewModel(IDialogService dialogService)
+        {
+            _dialogService = dialogService;
+        }
+    
         public DelegateCommand TestCommand => new DelegateCommand(async () => await TestCommandExecute());
 
         private async Task TestCommandExecute()
         {
             string title = "title";
             string message = "message";
-            await DialogService.ShowMessage(title, message);
+            await _dialogService.ShowMessage(title, message);
         }
 
         public override Task InitializeAsync(object navigationData)
