@@ -10,8 +10,10 @@
 
 5. In the *ViewModelLocator class* you must resgister the __DialogService__.
 
-6. In the *ViewModelBase class* you must declare the __DialogService__.
+6. In the *MainViewModel* class you must declare the ___dialogService__.
 
-7. In the *constructor of the ViewModelBase* you must create a instance of the __DialogService__.
+7. In the constructor of the MainViewModel you recieve the DialogService like a paramter.
+
+8. In the *constructor of the ViewModelBase* you must create a instance of the __DialogService__.
 
 > Note: The project needs the Autofac package.
