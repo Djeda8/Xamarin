@@ -6,10 +6,49 @@
              mc:Ignorable="d"
              x:Class="PreferencesService.Views.Settings.SettingsView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical"
+                     Spacing="0">
+            <StackLayout Padding="0,13,0,13">
+                <Label Text="CONFIGURACION"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Spacing="20"
+                         VerticalOptions="FillAndExpand"
+                         Padding="5,20,5,0">
+                <Label Text="Contador (última ref. enviada)"
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"/>
+                <Entry Text="{Binding ContadorTXT}"
+                       Placeholder="Introduzca última ref. de listado"
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"
+                       Keyboard="Numeric">
+                </Entry>
+                <Label Text="Num. terminal" 
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"/>
+                <Entry Text="{Binding TerminalNumTXT}"
+                       Placeholder="Introduzca nuevo num. de terminal"
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"
+                       Keyboard="Numeric">
+                </Entry>
+                <Label Text="URI" 
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"/>
+                <Entry Text="{Binding URITXT}"
+                       Placeholder="Introduzca nueva dirección IP"
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"
+                       Keyboard="Url">
+                </Entry>
+                <Button Text="Aceptar"
+                        Command="{Binding AcceptCommand}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                </Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -15,6 +15,7 @@ namespace PreferencesService.Views.Settings
         public SettingsView()
         {
             InitializeComponent();
+            Title = AppSettings.AppTitle;
         }
     }
 }
