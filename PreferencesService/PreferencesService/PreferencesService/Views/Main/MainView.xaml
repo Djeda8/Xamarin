@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PreferencesService.Views.Main.MainView">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="ic_settings.png" Order="Primary" Command="{Binding SettingsCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Spacing="0">
+            <StackLayout Style="{StaticResource stackLayoutSubtitleStyle}">
+                <Label Text="MENU PRINCIPAL"
+                       Style="{StaticResource labelSubTitleStyle}"
+                       VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout VerticalOptions="FillAndExpand"
+                         HorizontalOptions="Center"
+                         Spacing="0"
+                         Padding="5,20,5,0">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="48" />
+                        <ColumnDefinition Width="202" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="110"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Image Source="Logo.jpg"
+                           Grid.Column="0"
+                           Grid.Row="0"
+                           Grid.ColumnSpan="2"
+                           WidthRequest="160"
+                           HorizontalOptions="Center"
+                           VerticalOptions="Center">
+                    </Image>
+                    <!--Boton 1-->
+                    <ImageButton Source="menu1.png"
+                                 Command="{Binding AccessFreeCommand}"
+                                 Grid.Column="0"
+                                 Grid.Row="1"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 WidthRequest="250"
+                                 Grid.ColumnSpan="2">
+                    </ImageButton>
+                    <Label Text="Acceso libre"
+                           TextColor="{StaticResource WhiteColor}"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="1"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                    </Label>
+                    <StackLayout Padding="0"
+                                 Spacing="0"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 BackgroundColor="Transparent"
+                                 Grid.Column="0"
+                                 Grid.Row="1">
+                        <ImageButton Source="ic_free.png"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     Command="{Binding AccessFreeCommand}">
+                        </ImageButton>
+                    </StackLayout>
+                    <!--Boton 2-->
+                    <ImageButton Source="menu1.png"
+                                 Command="{Binding AccessLoginCommand}"
+                                 Grid.Column="0"
+                                 Grid.Row="2"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 WidthRequest="250"
+                                 Grid.ColumnSpan="2">
+                    </ImageButton>
+                    <Label Text="Acceso con contraseña"
+                           TextColor="{StaticResource WhiteColor}"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="2"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                    </Label>
+                    <StackLayout Padding="0"
+                                 Spacing="0"
+                                 VerticalOptions="Center"
+                                 HorizontalOptions="Center"
+                                 BackgroundColor="Transparent"
+                                 Grid.Column="0"
+                                 Grid.Row="2">
+                        <ImageButton Source="ic_password.png"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     Command="{Binding AccessLoginCommand}">
+                        </ImageButton>
+                    </StackLayout>
+                    <!--Boton 3-->
+                    <ImageButton Source="menu1.png"
+                                 Command="{Binding SynchronizeCommand}"
+                                 Grid.Column="0"
+                                 Grid.Row="3"
+                                 HorizontalOptions="Center"
+                                 VerticalOptions="Center"
+                                 WidthRequest="250"
+                                 Grid.ColumnSpan="2">
+                    </ImageButton>
+                    <Label Text="Sincronizar"
+                           TextColor="{StaticResource WhiteColor}"
+                           Grid.Column="0"
+                           Grid.ColumnSpan="2"
+                           Grid.Row="3"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center">
+                    </Label>
+                    <StackLayout Padding="0"
+                                     Spacing="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     BackgroundColor="Transparent"
+                                     WidthRequest="250"
+                                     Grid.Column="0"
+                                     Grid.Row="3">
+                        <ImageButton Source="ic_sync.png"
+                                         HorizontalOptions="Center"
+                                         VerticalOptions="Center"
+                                         Command="{Binding SynchronizeCommand}">
+                        </ImageButton>
+                    </StackLayout>
+                    <!--Boton 4-->
+                    <ImageButton Source="menu1.png"
+                                     Command="{Binding ExitCommand}"
+                                     Grid.Column="0"
+                                     Grid.ColumnSpan="2"
+                                     Grid.Row="4"
+                                     HorizontalOptions="Center"
+                                     VerticalOptions="Center"
+                                     WidthRequest="250">
+                    </ImageButton>
+                    <Label Text="Salir"
+                               TextColor="{StaticResource WhiteColor}"
+                               Grid.Column="0"
+                               Grid.ColumnSpan="2"
+                               Grid.Row="4"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center">
+                    </Label>
+                    <StackLayout Padding="0"
+                                     Spacing="0"
+                                     VerticalOptions="Center"
+                                     HorizontalOptions="Center"
+                                     BackgroundColor="Transparent"
+                                     Grid.Column="0"
+                                     Grid.Row="4">
+                        <ImageButton Source="ic_exit.png"
+                                         HorizontalOptions="Center"
+                                         VerticalOptions="Center"
+                                         Command="{Binding ExitCommand}">
+                        </ImageButton>
+                    </StackLayout>
+                </Grid>
+            </StackLayout>
+            <StackLayout Style="{StaticResource stackLayoutVersionStyle}">
+                <Label Text="{Binding VersionTXT}"
+                       Style="{StaticResource labelVersionStyle}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
