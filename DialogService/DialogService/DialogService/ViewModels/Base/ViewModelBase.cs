@@ -13,8 +13,7 @@ namespace DialogService.ViewModels.Base
     {
         // Services interfaces
         protected readonly INavigationService NavigationService;
-        protected readonly IDialogService DialogService;
-
+        
         public string _version;
 
         public string VersionTXT
@@ -30,7 +29,6 @@ namespace DialogService.ViewModels.Base
         public ViewModelBase()
         {
             NavigationService = ViewModelLocator.Instance.Resolve<INavigationService>();
-            DialogService = ViewModelLocator.Instance.Resolve<IDialogService>();
         }
 
         public virtual Task InitializeAsync(object navigationData)
