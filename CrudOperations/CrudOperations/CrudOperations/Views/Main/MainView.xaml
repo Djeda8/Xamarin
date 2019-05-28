@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="CrudOperations.Views.Main.MainView">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical"
+                     Spacing="0">
+            <StackLayout Padding="0,13,0,13">
+                <Label Text="CRUD example"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Spacing="20"
+                         VerticalOptions="FillAndExpand"
+                         Padding="5,20,5,0">
+                <Label Text="Name" 
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"/>
+                <Entry Text="{Binding NameTXT}"
+                       Placeholder="Enter your name"
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"
+                       Keyboard="Text">
+                </Entry>
+                <Label Text="Age" 
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"/>
+                <Entry Text="{Binding AgeTXT}"
+                       Placeholder="Enter your age"
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"
+                       Keyboard="Numeric">
+                </Entry>
+                <Label Text="Email" 
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"/>
+                <Entry Text="{Binding EmailTXT}"
+                       Placeholder="enter an e-mail"
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"
+                       Keyboard="Email">
+                </Entry>
+                <Label Text="Phone number" 
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"/>
+                <Entry Text="{Binding PhoneTXT}"
+                       Placeholder="enter your phone number"
+                       VerticalOptions="End"
+                       HorizontalOptions="Fill"
+                       Keyboard="Email">
+                </Entry>
+                <StackLayout Orientation="Horizontal"
+                             Spacing="10">
+                    <Button Text="Save"
+                        Command="{Binding SaveCommand}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                    </Button>
+                    <Button Text="Search"
+                        Command="{Binding SearchCommand}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                    </Button>
+                    <Button Text="Delete"
+                        Command="{Binding DeleteCommand}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                    </Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
