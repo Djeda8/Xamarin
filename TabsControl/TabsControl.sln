@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabsControl.Android", "TabsControl\TabsControl.Android\TabsControl.Android.csproj", "{FB449512-6F6B-4CF9-ADDA-6E0AA78FD447}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TabsControl", "TabsControl\TabsControl\TabsControl.csproj", "{3E579EB0-BB73-4ECA-B443-BAA7575A9D2F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FB449512-6F6B-4CF9-ADDA-6E0AA78FD447}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB449512-6F6B-4CF9-ADDA-6E0AA78FD447}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB449512-6F6B-4CF9-ADDA-6E0AA78FD447}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{FB449512-6F6B-4CF9-ADDA-6E0AA78FD447}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB449512-6F6B-4CF9-ADDA-6E0AA78FD447}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB449512-6F6B-4CF9-ADDA-6E0AA78FD447}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{3E579EB0-BB73-4ECA-B443-BAA7575A9D2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E579EB0-BB73-4ECA-B443-BAA7575A9D2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E579EB0-BB73-4ECA-B443-BAA7575A9D2F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{3E579EB0-BB73-4ECA-B443-BAA7575A9D2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E579EB0-BB73-4ECA-B443-BAA7575A9D2F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E579EB0-BB73-4ECA-B443-BAA7575A9D2F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {88C498A4-5E81-490C-9942-EDDA9CE6C2F7}
+	EndGlobalSection
+EndGlobal
