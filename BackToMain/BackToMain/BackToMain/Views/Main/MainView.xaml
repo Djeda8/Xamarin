@@ -5,71 +5,74 @@
     <ContentPage.Content>
         <StackLayout Orientation="Vertical"
                      VerticalOptions="FillAndExpand"
-                     HorizontalOptions="Center"
-                     Spacing="40"
-                     Padding="0,50,0,50">
+                     HorizontalOptions="CenterAndExpand"
+                     Spacing="0"
+                     Padding="5,5,5,5">
             <StackLayout Orientation="Vertical"
-                         VerticalOptions="FillAndExpand"
-                         HorizontalOptions="Center">
-                <Label Text="Example 1"
-                       Font="14,Bold"
-                       TextDecorations="Underline"></Label>
-                <Label Text="Whith Navigation Arrow and Physical Button."></Label>
-                <Button Text="Go to example 1" 
-                    Command="{Binding Example1Command}"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center">
+                         VerticalOptions="Fill"
+                         HorizontalOptions="FillAndExpand">
+                <Label Text="With Navigation Arrow and Physical Button."></Label>
+                <Button Text="Example 1" 
+                        Command="{Binding Example1Command}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
                 </Button>
             </StackLayout>
             <StackLayout Orientation="Vertical"
-                         VerticalOptions="FillAndExpand"
-                         HorizontalOptions="Center">
-                <Label Text="Example 2"
-                       Font="14,Bold"
-                       TextDecorations="Underline"></Label>
-                <Label Text="Whithout Navigation Arrow /with Physical Button."></Label>
-                <Button Text="Go to example 2" 
-                    Command="{Binding Example2Command}"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center">
+                         VerticalOptions="Fill"
+                         HorizontalOptions="FillAndExpand">
+                <BoxView BackgroundColor="Silver" HeightRequest="1"  HorizontalOptions="FillAndExpand"/>
+                <Label Text="Without Navigation Arrow /with Physical Button."
+                       HorizontalOptions="StartAndExpand"></Label>
+                <Button Text="Example 2" 
+                        Command="{Binding Example2Command}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
                 </Button>
             </StackLayout>
             <StackLayout Orientation="Vertical"
-                         VerticalOptions="FillAndExpand"
-                         HorizontalOptions="Center">
-                <Label Text="Example 3"
-                       Font="14,Bold"
-                       TextDecorations="Underline"></Label>
+                         VerticalOptions="Fill"
+                         HorizontalOptions="FillAndExpand">
+                <BoxView BackgroundColor="Silver" HeightRequest="1"  HorizontalOptions="FillAndExpand"/>
                 <Label Text="Without Navigation Arrow or Physical Button."></Label>
                 <Label Text="With a Button View."></Label>
-                <Button Text="Go to example 3" 
-                    Command="{Binding Example3Command}"
-                    HorizontalOptions="Center"
-                    VerticalOptions="Center">
+                <Button Text="Example 3" 
+                        Command="{Binding Example3Command}"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
                 </Button>
             </StackLayout>
             <StackLayout Orientation="Vertical"
-                         VerticalOptions="FillAndExpand"
-                         HorizontalOptions="Center">
-                <Label Text="Example 4"
-                       Font="14,Bold"
-                       TextDecorations="Underline"></Label>
-                <Label Text="Whith Navigation Arrow and Physical Button."></Label>
+                         VerticalOptions="Fill"
+                         HorizontalOptions="FillAndExpand">
+                <BoxView BackgroundColor="Silver" HeightRequest="1"  HorizontalOptions="FillAndExpand"/>
+                <Label Text="With Navigation Arrow and Physical Button."></Label>
                 <Label Text="But ask you if you want to exit."></Label>
-                <Button Text="Go to example 4" 
+                <Button Text="Example 4" 
                     Command="{Binding Example4Command}"
                     HorizontalOptions="Center"
                     VerticalOptions="Center">
                 </Button>
             </StackLayout>
             <StackLayout Orientation="Vertical"
-                         VerticalOptions="FillAndExpand"
-                         HorizontalOptions="Center">
-                <Label Text="Example 5"
-                       Font="14,Bold"
-                       TextDecorations="Underline"></Label>
-                <Button Text="Arrow / Physical Button / Question" 
-                    Command="{Binding GoScreen5Command}"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="FillAndExpand">
+                <BoxView BackgroundColor="Silver" HeightRequest="1"  HorizontalOptions="FillAndExpand"/>
+                <Label Text="With Navigation Arrow without Physical Button."></Label>
+                <Button Text="Example 5" 
+                    Command="{Binding Example5Command}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                </Button>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="Fill"
+                         HorizontalOptions="FillAndExpand">
+                <BoxView BackgroundColor="Silver" HeightRequest="1"  HorizontalOptions="FillAndExpand"/>
+                <Label Text="With Navigation Arrow and Physical Button."></Label>
+                <Label Text="Ask you with a Behaviour."></Label>
+                <Button Text="Example 6" 
+                    Command="{Binding Example6Command}"
                     HorizontalOptions="Center"
                     VerticalOptions="Center">
                 </Button>

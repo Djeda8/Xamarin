@@ -15,6 +15,7 @@ namespace BackToMain.Views.Main
         public MainView()
         {
             InitializeComponent();
+            Title = AppSettings.AppTitle;
         }
     }
 }
