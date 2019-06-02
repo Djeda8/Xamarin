@@ -3,10 +3,77 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="BackToMain.Views.Main.MainView">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Orientation="Vertical"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="Center"
+                     Spacing="40"
+                     Padding="0,50,0,50">
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="Center">
+                <Label Text="Example 1"
+                       Font="14,Bold"
+                       TextDecorations="Underline"></Label>
+                <Label Text="Whith Navigation Arrow and Physical Button."></Label>
+                <Button Text="Go to example 1" 
+                    Command="{Binding Example1Command}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                </Button>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="Center">
+                <Label Text="Example 2"
+                       Font="14,Bold"
+                       TextDecorations="Underline"></Label>
+                <Label Text="Whithout Navigation Arrow /with Physical Button."></Label>
+                <Button Text="Go to example 2" 
+                    Command="{Binding Example2Command}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                </Button>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="Center">
+                <Label Text="Example 3"
+                       Font="14,Bold"
+                       TextDecorations="Underline"></Label>
+                <Label Text="Without Navigation Arrow or Physical Button."></Label>
+                <Label Text="With a Button View."></Label>
+                <Button Text="Go to example 3" 
+                    Command="{Binding Example3Command}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                </Button>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="Center">
+                <Label Text="Example 4"
+                       Font="14,Bold"
+                       TextDecorations="Underline"></Label>
+                <Label Text="Whith Navigation Arrow and Physical Button."></Label>
+                <Label Text="But ask you if you want to exit."></Label>
+                <Button Text="Go to example 4" 
+                    Command="{Binding Example4Command}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                </Button>
+            </StackLayout>
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="Center">
+                <Label Text="Example 5"
+                       Font="14,Bold"
+                       TextDecorations="Underline"></Label>
+                <Button Text="Arrow / Physical Button / Question" 
+                    Command="{Binding GoScreen5Command}"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                </Button>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
