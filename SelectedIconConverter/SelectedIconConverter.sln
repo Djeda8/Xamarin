@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectedIconConverter.Android", "SelectedIconConverter\SelectedIconConverter.Android\SelectedIconConverter.Android.csproj", "{5C386A00-96F8-47A7-9F18-7055413D519A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SelectedIconConverter", "SelectedIconConverter\SelectedIconConverter\SelectedIconConverter.csproj", "{37B610BA-F099-4BC9-BF98-B2A2FEE8199A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C386A00-96F8-47A7-9F18-7055413D519A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C386A00-96F8-47A7-9F18-7055413D519A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C386A00-96F8-47A7-9F18-7055413D519A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5C386A00-96F8-47A7-9F18-7055413D519A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C386A00-96F8-47A7-9F18-7055413D519A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C386A00-96F8-47A7-9F18-7055413D519A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{37B610BA-F099-4BC9-BF98-B2A2FEE8199A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37B610BA-F099-4BC9-BF98-B2A2FEE8199A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37B610BA-F099-4BC9-BF98-B2A2FEE8199A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{37B610BA-F099-4BC9-BF98-B2A2FEE8199A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37B610BA-F099-4BC9-BF98-B2A2FEE8199A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37B610BA-F099-4BC9-BF98-B2A2FEE8199A}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C22B2B71-8F62-4F1B-ACC0-DE5C75594F8C}
+	EndGlobalSection
+EndGlobal
