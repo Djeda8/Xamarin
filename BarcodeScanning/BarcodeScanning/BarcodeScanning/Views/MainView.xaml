@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="BarcodeScanning.Views.MainView">
+    <ContentPage.Content>
+        <StackLayout Padding="10"
+                     Spacing="30">
+            <StackLayout Orientation="Horizontal">
+                <Entry Text="{Binding Number1}"
+                       HorizontalOptions="FillAndExpand"/>
+                <ImageButton Source="scan.png"
+                         HorizontalOptions="End"
+                         WidthRequest="48"
+                         Command="{Binding ScannerCommand}"
+                         CommandParameter="1"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Entry Text="{Binding Number2}"
+                       HorizontalOptions="FillAndExpand"/>
+                <ImageButton Source="scan.png"
+                         HorizontalOptions="End"
+                         WidthRequest="48"
+                         Command="{Binding ScannerCommand}"
+                         CommandParameter="2"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
