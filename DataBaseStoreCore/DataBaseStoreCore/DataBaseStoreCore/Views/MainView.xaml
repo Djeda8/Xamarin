@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:DataBaseStoreCore.Views"
+             x:Class="DataBaseStoreCore.Views.MainView">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <StackLayout Orientation="Horizontal">
+                <ImageButton Source="ic_add.png"
+                             Command="{Binding AddCommand}">
+
+                </ImageButton>
+                <ImageButton Source="ic_minus.png"
+                             Command="{Binding MinusCommand}">
+                </ImageButton>
+            </StackLayout>
+
+            <ListView ItemsSource="{Binding Lines}"
+                          SelectedItem="{Binding SelectedItem, Mode=TwoWay}"
+                          x:Name="miLista"
+						  SeparatorVisibility="Default"
+						  BackgroundColor="Transparent"
+						  SeparatorColor="#000000"
+						  HasUnevenRows="false">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <local:ItemViewTemplate ParentContext="{Binding BindingContext, Source={x:Reference Name=Distinto}}"/>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
