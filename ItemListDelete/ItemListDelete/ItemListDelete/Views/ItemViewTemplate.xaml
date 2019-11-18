@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ItemListDelete.Views.ItemViewTemplate"
+             x:Name="lineCell">
+    <ContentView.Content>
+        <StackLayout Spacing="2"
+                     Orientation="Horizontal"
+                     HeightRequest="40">
+            <Label Text="{Binding Name}"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="StartAndExpand"/>
+            <ImageButton  Source="ic_delete.png"
+                          VerticalOptions="Center"
+                          HorizontalOptions="End"
+                          HeightRequest="25"
+                          WidthRequest="25"
+                          Command="{Binding ParentContext.DelNotifyCommand, Source={x:Reference lineCell}}" CommandParameter="{Binding .}"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
