@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataBaseStoreCore.Services.Line;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
@@ -9,9 +10,11 @@ namespace DataBaseStoreCore.ViewModels.Base
 {
     public class ViewModelBase : INotifyPropertyChanged
     {
+        protected readonly ILineService LineService;
 
         public ViewModelBase()
         {
+            LineService = new LineService();
         }
 
         public virtual Task InitializeAsync(object navigationData)

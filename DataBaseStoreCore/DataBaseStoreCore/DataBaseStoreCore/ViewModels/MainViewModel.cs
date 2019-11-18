@@ -24,6 +24,7 @@ namespace DataBaseStoreCore.ViewModels
         public MainViewModel()
         {
             Contador = 1;
+            LineService.DeleteAll();
             Lines = new ObservableCollection<Line>();
         }
 
@@ -33,20 +34,23 @@ namespace DataBaseStoreCore.ViewModels
         {
             Line line = new Line()
             {
-                Id = Contador,
                 Name = String.Format($"Line {Contador}"),
             };
 
-            Lines.Add(line);
-
+            LineService.Insert(line);
+            UpdateList();
             Contador++;
         }
+
+
 
         public DelegateCommand MinusCommand => new DelegateCommand(MinusCommandExecute);
 
         private void MinusCommandExecute()
         {
-            Lines.RemoveAt(Lines.Count - 1);
+            var line = Lines[Lines.Count - 1];
+            LineService.Remove(line);
+            UpdateList();
             Contador--;
         }
 
@@ -54,7 +58,14 @@ namespace DataBaseStoreCore.ViewModels
 
         private void DelNotifyCommandExecute(Line line)
         {
-            Lines.Remove(line);
+            LineService.Remove(line);
+            UpdateList();
+        }
+
+        private void UpdateList()
+        {
+            var myList = LineService.getAll();
+            Lines = new ObservableCollection<Line>(myList);
         }
     }
 }

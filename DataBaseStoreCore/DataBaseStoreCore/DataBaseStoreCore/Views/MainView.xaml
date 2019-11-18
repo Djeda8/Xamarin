@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:local="clr-namespace:DataBaseStoreCore.Views"
-             x:Class="DataBaseStoreCore.Views.MainView">
+             x:Class="DataBaseStoreCore.Views.MainView"
+             x:Name="Distinto">
     <ContentPage.Content>
         <StackLayout Padding="10">
             <StackLayout Orientation="Horizontal">
