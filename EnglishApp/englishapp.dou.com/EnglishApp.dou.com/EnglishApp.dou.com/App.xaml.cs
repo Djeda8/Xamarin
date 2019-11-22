@@ -1,4 +1,5 @@
 ﻿using EnglishApp.dou.com.Services;
+using EnglishApp.dou.com.Services.Navigation;
 using EnglishApp.dou.com.ViewModels.Base;
 using System;
 using System.Threading.Tasks;

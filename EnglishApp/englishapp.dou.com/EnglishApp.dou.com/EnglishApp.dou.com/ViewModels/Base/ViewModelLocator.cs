@@ -1,10 +1,9 @@
 ﻿using Autofac;
-using EnglishApp.dou.com.Services;
+using EnglishApp.dou.com.Services.DataStore;
+using EnglishApp.dou.com.Services.Navigation;
 using EnglishApp.dou.com.ViewModels.EnglishWord;
 using EnglishApp.dou.com.ViewModels.Main;
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace EnglishApp.dou.com.ViewModels.Base
 {
@@ -31,6 +30,7 @@ namespace EnglishApp.dou.com.ViewModels.Base
 
             // Services
             builder.RegisterType<NavigationService>().As<INavigationService>();
+            builder.RegisterType<DataStoreService>().As<IDataStoreService>();
 
 
             if (_container != null)

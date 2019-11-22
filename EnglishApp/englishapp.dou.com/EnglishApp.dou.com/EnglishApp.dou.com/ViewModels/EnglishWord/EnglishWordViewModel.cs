@@ -7,5 +7,6 @@ namespace EnglishApp.dou.com.ViewModels.EnglishWord
 {
     class EnglishWordViewModel : ViewModelBase
     {
+
     }
 }

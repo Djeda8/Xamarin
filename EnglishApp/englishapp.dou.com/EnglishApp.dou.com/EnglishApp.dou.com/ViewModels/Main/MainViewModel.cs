@@ -20,5 +20,12 @@ namespace EnglishApp.dou.com.ViewModels.Main
         {
             await NavigationService.NavigateToAsync<EnglishWordViewModel>();
         }
+
+        public DelegateCommand LoadWordsCommand => new DelegateCommand(async () => await LoadWordsCommandExecute());
+
+        private async Task LoadWordsCommandExecute()
+        {
+            await DataStoreService.ReadWords();
+        }
     }
 }

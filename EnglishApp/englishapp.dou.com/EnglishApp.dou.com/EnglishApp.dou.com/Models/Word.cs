@@ -6,9 +6,11 @@ namespace EnglishApp.dou.com.Models
 {
     public class Word
     {
-        public int id { get; set; }
-        public string SpanishWord { get; set; }
-        public string EnglishWord { get; set; }
-        public string Definition { get; set; }
+        public int Id { get; set; }
+        public string Type { get; set; }
+        public string EN_Word { get; set; }
+        public string EN_definition { get; set; }
+        public string SP_Word { get; set; }
+        public string SP_Definition { get; set; }
     }
 }
